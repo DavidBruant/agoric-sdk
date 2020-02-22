@@ -110,5 +110,8 @@ jobs:
     - name: yarn test (zoe)
       run: cd packages/zoe && yarn test
 
+  lint:
+    runs-on: ubuntu-latest
+    steps:
     - name: lint check
       run: yarn lint-check
